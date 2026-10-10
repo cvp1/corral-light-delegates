@@ -1,0 +1,15 @@
+{
+  "schema": "corral-light.manifest/1",
+  "name": "delegates",
+  "title": "Delegates",
+  "version": "0.1.0",
+  "core_api": 1,
+  "summary": "Which boxes your delegates run on, what each grant allows, and any box no valid grant covers",
+  "collector": {"script": "collector.py", "args": ["snapshot"],
+                "every_s": 300, "budget_s": 10, "timeout_s": 30},
+  "cli": {"script": "cli.py"},
+  "doctor": {"script": "cli.py", "args": ["doctor"]},
+  "reads": [],
+  "network": "none",
+  "notices": true
+}

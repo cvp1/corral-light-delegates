@@ -1,0 +1,515 @@
+{
+ "delegates": [
+  {
+   "name": "overdue-1",
+   "charter": "overdue-1.md",
+   "state": "OVERDUE-REVOKE",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-01-01T00:00:00Z",
+   "expires_unparseable": false,
+   "hours_left": -6769.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no manifest at /tmp/tmpx3y8tg_a/boxes-that-do-not-exist/overdue-1-node.json -- box was never provisioned by this domain's provisioner, or the manifest was removed"
+    },
+    "credentials": []
+   },
+   "box": {
+    "tier": "delegate",
+    "ip": "1.2.3.5",
+    "domain": "lightsail",
+    "manifest_key": "overdue-1-node"
+   },
+   "active": true,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "badprice-1",
+   "charter": "badprice-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": "nano_3_0",
+     "as_of": null,
+     "note": "manifest's price_usd_month is not a valid non-negative number ('tbd') -- refusing to guess, this row's cost is unknown until the manifest is fixed"
+    },
+    "credentials": []
+   },
+   "box": {
+    "tier": "delegate",
+    "ip": "1.2.3.7",
+    "domain": "lightsail",
+    "manifest_key": "badprice-1-node"
+   },
+   "active": true,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "badsig-1",
+   "charter": "badsig-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "creds-1",
+   "charter": "creds-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": [
+     {
+      "type": "xai-api-key",
+      "vault_file": "/home/cvande/.key/grok.key",
+      "amount_usd": null,
+      "note": "shared-key: unattributable (same vault file as the ranch's own scheduled jobs -- revoking or measuring this key affects both)"
+     },
+     {
+      "type": "xai-api-key",
+      "vault_file": "/home/cvande/.key/creds-1-dedicated.key",
+      "amount_usd": null,
+      "note": "not the ranch's known shared key for this type -- unverified handle, no ledger either way (delegates call providers directly from the box, never through _lib's ledgered client, so even a genuinely dedicated key has no ranch-side usage record to read)"
+     },
+     {
+      "type": "google-refresh-token",
+      "vault_file": "/home/cvande/.key/creds-1-cal.key",
+      "amount_usd": 0.0,
+      "note": "not a billed API (Calendar/OAuth call volume is free)"
+     }
+    ]
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "dupbox-1",
+   "charter": "dupbox-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no manifest at /tmp/tmpx3y8tg_a/boxes-that-do-not-exist/dupbox-1-node.json -- box was never provisioned by this domain's provisioner, or the manifest was removed"
+    },
+    "credentials": []
+   },
+   "box": {
+    "tier": "delegate",
+    "ip": "1.2.3.8",
+    "domain": "lightsail",
+    "manifest_key": "dupbox-1-node"
+   },
+   "active": true,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "gcp-live-1",
+   "charter": "gcp-live-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": 4.07,
+     "bundle_id": null,
+     "as_of": "2026-09-04T13:49:32Z",
+     "note": null
+    },
+    "credentials": []
+   },
+   "box": {
+    "tier": "delegate",
+    "ip": "10.42.0.9",
+    "domain": "gcp",
+    "manifest_key": "gcp-live-1"
+   },
+   "active": true,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "live-1",
+   "charter": "live-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no manifest at /tmp/tmpx3y8tg_a/boxes-that-do-not-exist/live-1-node.json -- box was never provisioned by this domain's provisioner, or the manifest was removed"
+    },
+    "credentials": []
+   },
+   "box": {
+    "tier": "delegate",
+    "ip": "1.2.3.4",
+    "domain": "lightsail",
+    "manifest_key": "live-1-node"
+   },
+   "active": true,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "naive-1",
+   "charter": "naive-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-12-01T03:00:00",
+   "expires_unparseable": true,
+   "hours_left": null,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "novault-1",
+   "charter": "novault-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": [
+     {
+      "type": "xai-api-key",
+      "vault_file": null,
+      "amount_usd": null,
+      "note": "no vault file declared -- cannot classify shared vs. dedicated, no ledger either way"
+     }
+    ]
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "priced-1",
+   "charter": "priced-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": 3.5,
+     "bundle_id": "nano_3_0",
+     "as_of": "2026-08-24T02:36:57Z",
+     "note": null
+    },
+    "credentials": []
+   },
+   "box": {
+    "tier": "delegate",
+    "ip": "1.2.3.6",
+    "domain": "lightsail",
+    "manifest_key": "priced-1-node"
+   },
+   "active": true,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "soon-1",
+   "charter": "soon-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-10T01:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 1.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "tzoffset-1",
+   "charter": "tzoffset-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-12-01T03:00:00-07:00",
+   "expires_unparseable": false,
+   "hours_left": 1257.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "unapproved-1",
+   "charter": "unapproved-1.md",
+   "state": "BAD-SIG",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "revoked-1",
+   "charter": "revoked-1.md",
+   "state": "REVOKED",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-01-01T00:00:00Z",
+   "expires_unparseable": false,
+   "hours_left": -6769.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 2,
+   "last_event": "revoke 2026-08-16T000000Z"
+  },
+  {
+   "name": "expired-1",
+   "charter": "expired-1.md",
+   "state": "EXPIRED",
+   "signed": true,
+   "sig_ok": false,
+   "sig_detail": "verification refused by test hook",
+   "approval_signed": true,
+   "expires": "2026-01-01T00:00:00Z",
+   "expires_unparseable": false,
+   "hours_left": -6769.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  },
+  {
+   "name": "drafted-1",
+   "charter": "drafted-1.md",
+   "state": "DRAFTED",
+   "signed": false,
+   "sig_ok": false,
+   "sig_detail": "no .sig",
+   "approval_signed": true,
+   "expires": "2026-10-17T00:59:49Z",
+   "expires_unparseable": false,
+   "hours_left": 168.0,
+   "data_class": "internal",
+   "capabilities": null,
+   "budget_usd": "5",
+   "spend": {
+    "box": {
+     "amount_usd": null,
+     "bundle_id": null,
+     "as_of": null,
+     "note": "no live box for this charter"
+    },
+    "credentials": []
+   },
+   "box": null,
+   "active": false,
+   "audit_events": 0,
+   "last_event": null
+  }
+ ],
+ "unattributed_audit": [
+  "2026-08-16T000000Z_deliver-nosuch1.log",
+  "not-an-audit-file.txt"
+ ],
+ "gcp_visible": true,
+ "generated_at": "2026-10-09T17:59:49-0700"
+}
+
